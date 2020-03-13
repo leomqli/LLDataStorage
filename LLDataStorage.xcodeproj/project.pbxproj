@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -94,13 +94,9 @@
 		B38D88B0241B30AA00D1B240 /* LLDataStorage */ = {
 			isa = PBXGroup;
 			children = (
-				B38D88B1241B30AA00D1B240 /* AppDelegate.swift */,
-				B38D88B3241B30AA00D1B240 /* SceneDelegate.swift */,
-				B38D88B5241B30AA00D1B240 /* ViewController.swift */,
-				B38D88B7241B30AA00D1B240 /* Main.storyboard */,
-				B38D88BA241B30AC00D1B240 /* Assets.xcassets */,
-				B38D88BC241B30AC00D1B240 /* LaunchScreen.storyboard */,
-				B38D88BF241B30AC00D1B240 /* Info.plist */,
+				B38D88D3241B5AC200D1B240 /* Main */,
+				B38D88D4241B5ADA00D1B240 /* Storyboards */,
+				B38D88D5241B5B0500D1B240 /* Resources */,
 			);
 			path = LLDataStorage;
 			sourceTree = "<group>";
@@ -114,13 +110,40 @@
 			path = LLDataStorageTests;
 			sourceTree = "<group>";
 		};
+		B38D88D3241B5AC200D1B240 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B38D88B1241B30AA00D1B240 /* AppDelegate.swift */,
+				B38D88B3241B30AA00D1B240 /* SceneDelegate.swift */,
+				B38D88B5241B30AA00D1B240 /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B38D88D4241B5ADA00D1B240 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B38D88B7241B30AA00D1B240 /* Main.storyboard */,
+				B38D88BC241B30AC00D1B240 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B38D88D5241B5B0500D1B240 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B38D88BF241B30AC00D1B240 /* Info.plist */,
+				B38D88BA241B30AC00D1B240 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		FBC55B860FB2AFF4CC0A6B88 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				66C6E55604E4BC32EBDCC3B1 /* Pods-LLDataStorage.debug.xcconfig */,
 				2DB88C5B446C865157C8C323 /* Pods-LLDataStorage.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -434,7 +457,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MC4ML6FGRD;
-				INFOPLIST_FILE = LLDataStorage/Info.plist;
+				INFOPLIST_FILE = LLDataStorage/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,7 +476,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MC4ML6FGRD;
-				INFOPLIST_FILE = LLDataStorage/Info.plist;
+				INFOPLIST_FILE = LLDataStorage/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
