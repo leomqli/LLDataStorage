@@ -17,8 +17,12 @@
 		B38D88C9241B30AD00D1B240 /* LLDataStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38D88C8241B30AD00D1B240 /* LLDataStorageTests.swift */; };
 		B38D88E9241B5E8800D1B240 /* CommonImport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38D88E4241B5E8800D1B240 /* CommonImport.swift */; };
 		B38D88EA241B5E8800D1B240 /* LLDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38D88E6241B5E8800D1B240 /* LLDBManager.swift */; };
-		B38D88EB241B5E8800D1B240 /* LLDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38D88E7241B5E8800D1B240 /* LLDataBase.swift */; };
+		B38D88EB241B5E8800D1B240 /* LLDataBaseExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38D88E7241B5E8800D1B240 /* LLDataBaseExample.swift */; };
 		B38D88EC241B5E8800D1B240 /* LLDBProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38D88E8241B5E8800D1B240 /* LLDBProtocol.swift */; };
+		B38D88F5241B5FB300D1B240 /* LLFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38D88EE241B5FB300D1B240 /* LLFileManager.swift */; };
+		B38D8900241B67AE00D1B240 /* LLKeychainProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38D88FF241B67AE00D1B240 /* LLKeychainProtocol.swift */; };
+		B38D8902241B680400D1B240 /* LLKeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38D8901241B680400D1B240 /* LLKeychainManager.swift */; };
+		B38D8904241B913600D1B240 /* SampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38D8903241B913600D1B240 /* SampleModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +51,12 @@
 		B38D88CA241B30AD00D1B240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B38D88E4241B5E8800D1B240 /* CommonImport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonImport.swift; sourceTree = "<group>"; };
 		B38D88E6241B5E8800D1B240 /* LLDBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLDBManager.swift; sourceTree = "<group>"; };
-		B38D88E7241B5E8800D1B240 /* LLDataBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLDataBase.swift; sourceTree = "<group>"; };
+		B38D88E7241B5E8800D1B240 /* LLDataBaseExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLDataBaseExample.swift; sourceTree = "<group>"; };
 		B38D88E8241B5E8800D1B240 /* LLDBProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLDBProtocol.swift; sourceTree = "<group>"; };
+		B38D88EE241B5FB300D1B240 /* LLFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLFileManager.swift; sourceTree = "<group>"; };
+		B38D88FF241B67AE00D1B240 /* LLKeychainProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLKeychainProtocol.swift; sourceTree = "<group>"; };
+		B38D8901241B680400D1B240 /* LLKeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLKeychainManager.swift; sourceTree = "<group>"; };
+		B38D8903241B913600D1B240 /* SampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleModel.swift; sourceTree = "<group>"; };
 		C8F72B72EC16E38A5C01712A /* Pods_LLDataStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LLDataStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -103,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				B38D88E3241B5E8800D1B240 /* LLDataStorage */,
+				B38D88FC241B627400D1B240 /* Example */,
 				B38D88D3241B5AC200D1B240 /* Main */,
 				B38D88D4241B5ADA00D1B240 /* Storyboards */,
 				B38D88D5241B5B0500D1B240 /* Resources */,
@@ -151,7 +160,9 @@
 			isa = PBXGroup;
 			children = (
 				B38D88E4241B5E8800D1B240 /* CommonImport.swift */,
+				B38D88FE241B66FC00D1B240 /* LLKeychain */,
 				B38D88E5241B5E8800D1B240 /* LLDataBase */,
+				B38D88ED241B5FB300D1B240 /* LLFileManager */,
 			);
 			path = LLDataStorage;
 			sourceTree = "<group>";
@@ -159,11 +170,44 @@
 		B38D88E5241B5E8800D1B240 /* LLDataBase */ = {
 			isa = PBXGroup;
 			children = (
-				B38D88E6241B5E8800D1B240 /* LLDBManager.swift */,
-				B38D88E7241B5E8800D1B240 /* LLDataBase.swift */,
 				B38D88E8241B5E8800D1B240 /* LLDBProtocol.swift */,
+				B38D88E6241B5E8800D1B240 /* LLDBManager.swift */,
 			);
 			path = LLDataBase;
+			sourceTree = "<group>";
+		};
+		B38D88ED241B5FB300D1B240 /* LLFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				B38D88EE241B5FB300D1B240 /* LLFileManager.swift */,
+			);
+			path = LLFileManager;
+			sourceTree = "<group>";
+		};
+		B38D88FC241B627400D1B240 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				B38D88FD241B636A00D1B240 /* LLDataBase */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		B38D88FD241B636A00D1B240 /* LLDataBase */ = {
+			isa = PBXGroup;
+			children = (
+				B38D8903241B913600D1B240 /* SampleModel.swift */,
+				B38D88E7241B5E8800D1B240 /* LLDataBaseExample.swift */,
+			);
+			path = LLDataBase;
+			sourceTree = "<group>";
+		};
+		B38D88FE241B66FC00D1B240 /* LLKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				B38D88FF241B67AE00D1B240 /* LLKeychainProtocol.swift */,
+				B38D8901241B680400D1B240 /* LLKeychainManager.swift */,
+			);
+			path = LLKeychain;
 			sourceTree = "<group>";
 		};
 		FBC55B860FB2AFF4CC0A6B88 /* Pods */ = {
@@ -321,11 +365,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B38D88EC241B5E8800D1B240 /* LLDBProtocol.swift in Sources */,
+				B38D88F5241B5FB300D1B240 /* LLFileManager.swift in Sources */,
 				B38D88EA241B5E8800D1B240 /* LLDBManager.swift in Sources */,
 				B38D88B6241B30AA00D1B240 /* ViewController.swift in Sources */,
-				B38D88EB241B5E8800D1B240 /* LLDataBase.swift in Sources */,
+				B38D8900241B67AE00D1B240 /* LLKeychainProtocol.swift in Sources */,
+				B38D8902241B680400D1B240 /* LLKeychainManager.swift in Sources */,
+				B38D88EB241B5E8800D1B240 /* LLDataBaseExample.swift in Sources */,
 				B38D88E9241B5E8800D1B240 /* CommonImport.swift in Sources */,
 				B38D88B2241B30AA00D1B240 /* AppDelegate.swift in Sources */,
+				B38D8904241B913600D1B240 /* SampleModel.swift in Sources */,
 				B38D88B4241B30AA00D1B240 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

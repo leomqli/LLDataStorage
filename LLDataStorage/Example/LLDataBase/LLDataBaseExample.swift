@@ -1,5 +1,5 @@
 //
-//  LLDataBase.swift
+//  LLDataBaseExample.swift
 //  LLDataStorage
 //
 //  Created by Leo on 2020/3/13.
@@ -7,7 +7,7 @@
 //
 
 /// 数据库
-enum LLDataBase: String, LLDataBaseProtocol {
+enum LLDataBaseExample: String, LLDataBaseExampleProtocol {
     
     /// 学习
     case study = "Study.db"
@@ -22,7 +22,7 @@ enum LLDataBase: String, LLDataBaseProtocol {
 
     /// 数据库文件路径
     var path: String {
-        return LLDataBase.documentPath + "/" + rawValue
+        return LLDataBaseExample.documentPath + "/" + rawValue
     }
 
     /// 数据库标签
@@ -78,11 +78,11 @@ enum LLTableName: String, LLTableProtocol {
     var dataBase: Database {
         switch self {
         case .study:
-            return LLDataBase.study.db
+            return LLDataBaseExample.study.db
         case .courseList:
-            return LLDataBase.courseList.db
+            return LLDataBaseExample.courseList.db
         case .courseDetail:
-            return LLDataBase.courseDetail.db
+            return LLDataBaseExample.courseDetail.db
         }
     }
 }

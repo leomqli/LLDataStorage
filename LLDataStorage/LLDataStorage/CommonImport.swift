@@ -6,5 +6,6 @@
 //  Copyright © 2020 LmqLeo. All rights reserved.
 //
 
-@_exported import WCDBSwift
 @_exported import Foundation
+@_exported import WCDBSwift
+@_exported import KeychainSwift

@@ -5,5 +5,8 @@ use_frameworks!
 inhibit_all_warnings!
  
 target 'LLDataStorage' do
+    
     pod 'WCDB.swift'
+    pod 'KeychainSwift'
+    
 end

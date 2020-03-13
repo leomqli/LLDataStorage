@@ -17,7 +17,7 @@ protocol LLTableProtocol {
 }
 
 /// 数据库协议
-protocol LLDataBaseProtocol {
+protocol LLDataBaseExampleProtocol {
     /// 数据库存放路径
     var path: String {get}
     /// 数据库tag 对应唯一数据库
