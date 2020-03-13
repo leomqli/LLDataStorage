@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E30DE06570DB18499B0148F /* Pods_LLDataStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8F72B72EC16E38A5C01712A /* Pods_LLDataStorage.framework */; };
 		B38D88B2241B30AA00D1B240 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38D88B1241B30AA00D1B240 /* AppDelegate.swift */; };
 		B38D88B4241B30AA00D1B240 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38D88B3241B30AA00D1B240 /* SceneDelegate.swift */; };
 		B38D88B6241B30AA00D1B240 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38D88B5241B30AA00D1B240 /* ViewController.swift */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2DB88C5B446C865157C8C323 /* Pods-LLDataStorage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLDataStorage.release.xcconfig"; path = "Target Support Files/Pods-LLDataStorage/Pods-LLDataStorage.release.xcconfig"; sourceTree = "<group>"; };
+		66C6E55604E4BC32EBDCC3B1 /* Pods-LLDataStorage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLDataStorage.debug.xcconfig"; path = "Target Support Files/Pods-LLDataStorage/Pods-LLDataStorage.debug.xcconfig"; sourceTree = "<group>"; };
 		B38D88AE241B30AA00D1B240 /* LLDataStorage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLDataStorage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B38D88B1241B30AA00D1B240 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B38D88B3241B30AA00D1B240 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +41,7 @@
 		B38D88C4241B30AD00D1B240 /* LLDataStorageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LLDataStorageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B38D88C8241B30AD00D1B240 /* LLDataStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLDataStorageTests.swift; sourceTree = "<group>"; };
 		B38D88CA241B30AD00D1B240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8F72B72EC16E38A5C01712A /* Pods_LLDataStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LLDataStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E30DE06570DB18499B0148F /* Pods_LLDataStorage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,12 +63,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		441DAA9EDF3C9647EA00A225 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8F72B72EC16E38A5C01712A /* Pods_LLDataStorage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B38D88A5241B30AA00D1B240 = {
 			isa = PBXGroup;
 			children = (
 				B38D88B0241B30AA00D1B240 /* LLDataStorage */,
 				B38D88C7241B30AD00D1B240 /* LLDataStorageTests */,
 				B38D88AF241B30AA00D1B240 /* Products */,
+				FBC55B860FB2AFF4CC0A6B88 /* Pods */,
+				441DAA9EDF3C9647EA00A225 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +114,16 @@
 			path = LLDataStorageTests;
 			sourceTree = "<group>";
 		};
+		FBC55B860FB2AFF4CC0A6B88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66C6E55604E4BC32EBDCC3B1 /* Pods-LLDataStorage.debug.xcconfig */,
+				2DB88C5B446C865157C8C323 /* Pods-LLDataStorage.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B38D88CD241B30AD00D1B240 /* Build configuration list for PBXNativeTarget "LLDataStorage" */;
 			buildPhases = (
+				736412B36F085615A254E522 /* [CP] Check Pods Manifest.lock */,
 				B38D88AA241B30AA00D1B240 /* Sources */,
 				B38D88AB241B30AA00D1B240 /* Frameworks */,
 				B38D88AC241B30AA00D1B240 /* Resources */,
+				12F1FAAA9B162D09B19DA786 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -194,6 +221,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12F1FAAA9B162D09B19DA786 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LLDataStorage/Pods-LLDataStorage-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LLDataStorage/Pods-LLDataStorage-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LLDataStorage/Pods-LLDataStorage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		736412B36F085615A254E522 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LLDataStorage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B38D88AA241B30AA00D1B240 /* Sources */ = {
@@ -360,6 +429,7 @@
 		};
 		B38D88CE241B30AD00D1B240 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66C6E55604E4BC32EBDCC3B1 /* Pods-LLDataStorage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -378,6 +448,7 @@
 		};
 		B38D88CF241B30AD00D1B240 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DB88C5B446C865157C8C323 /* Pods-LLDataStorage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
