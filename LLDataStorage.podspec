@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "LLDataStorage"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "LLDataStorage是一个Swift数据存储库"
 
   # This description is used to generate tags and improve search results.
@@ -25,9 +25,9 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-    LLDataStorage是一个Swift数据存储库。
-    封装了UserDefaults、KeychainSwift、WCDBSwift、FileManager, 实现一行代码进行数据持久化。
-                   DESC
+                      LLDataStorage是一个Swift数据存储库。
+                      封装了UserDefaults、KeychainSwift、WCDBSwift、FileManager, 实现一行代码进行数据持久化。
+                      DESC
 
   spec.homepage     = "https://github.com/lmqleo/LLDataStorage"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -40,7 +40,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = 'MIT'
+  spec.license      = { :type => "MIT", :file => "LICENSE.md" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -53,7 +53,7 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "Leo" => "geekleo@icloud.com" }
+  spec.author        = { "Leo" => "geekleo@icloud.com" }
   # spec.social_media_url   = "https://twitter.com/"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,8 +89,26 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Source", "Podspec/Source/**/*"
+  spec.source_files  = "Source/**/*"
   spec.exclude_files = "Source/Exclude"
+
+  spec.subspec 'LLDataBase' do |db|
+    db.source_files  = 'Source/LLDataBase/**/*'
+    spec.static_framework = true
+    spec.dependency 'WCDB.swift'
+  end
+
+  spec.subspec 'LLFileManager' do |fm|
+    fm.source_files  = 'Source/LLFileManager/**/*'
+  end
+
+  spec.subspec 'LLKeychain' do |kc|
+    kc.source_files  = 'Source/LLKeychain/**/*'
+    spec.static_framework = true
+    spec.dependency 'KeychainSwift'
+  end
+
+  spec.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -115,7 +133,7 @@ Pod::Spec.new do |spec|
   #  the lib prefix of their name.
   #
 
-  spec.ios.frameworks = 'Foundation'
+  spec.ios.frameworks = "UIKit", "Foundation"
 
   # spec.framework  = "SomeFramework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
@@ -134,10 +152,5 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
-
-  spec.static_framework = true
-
-  spec.dependency 'WCDB.swift'
-  spec.dependency 'KeychainSwift'
 
 end

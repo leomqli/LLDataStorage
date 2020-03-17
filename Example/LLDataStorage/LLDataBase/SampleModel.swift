@@ -6,6 +6,8 @@
 //  Copyright © 2020 LmqLeo. All rights reserved.
 //
 
+import WCDBSwift
+
 class SampleModel: TableCodable {
     var name: String? = nil
     var age: Int = 0

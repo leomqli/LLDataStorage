@@ -6,6 +6,9 @@
 //  Copyright © 2020 LmqLeo. All rights reserved.
 //
 
+import Foundation
+import WCDBSwift
+
 class LLDBManager {
     
     /// database路径

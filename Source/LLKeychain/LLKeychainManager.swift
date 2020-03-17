@@ -6,6 +6,9 @@
 //  Copyright © 2020 LmqLeo. All rights reserved.
 //
 
+import Foundation
+import KeychainSwift
+
 /// 重写subscript方法 为LLKeychainManager添加下标赋值法
 public class LLKeychainManager {
     

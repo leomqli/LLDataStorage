@@ -6,6 +6,9 @@
 //  Copyright © 2020 LmqLeo. All rights reserved.
 //
 
+import UIKit
+import Foundation
+
 public class LLFileManager {
     
     /// database路径

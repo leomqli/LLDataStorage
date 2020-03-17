@@ -6,6 +6,9 @@
 //  Copyright © 2020 LmqLeo. All rights reserved.
 //
 
+import Foundation
+import WCDBSwift
+
 /// 数据表协议
 protocol LLTableProtocol {
     /// 表名

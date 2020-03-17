@@ -6,6 +6,9 @@
 //  Copyright © 2020 LmqLeo. All rights reserved.
 //
 
+import Foundation
+import KeychainSwift
+
 /// LLUserDefaultsProtocol 协议
 public protocol LLKeychainProtocol  {
     var uniqueKey: String { get }
