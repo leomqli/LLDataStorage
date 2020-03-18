@@ -93,17 +93,17 @@ Pod::Spec.new do |spec|
   spec.exclude_files = "Source/Exclude"
 
   spec.subspec 'LLDataBase' do |db|
-    db.source_files  = 'Source/LLDataBase/**/*'
+    db.source_files  = 'Source/LLDataBase/'
     spec.static_framework = true
     spec.dependency 'WCDB.swift'
   end
 
   spec.subspec 'LLFileManager' do |fm|
-    fm.source_files  = 'Source/LLFileManager/**/*'
+    fm.source_files  = 'Source/LLFileManager/'
   end
 
   spec.subspec 'LLKeychain' do |kc|
-    kc.source_files  = 'Source/LLKeychain/**/*'
+    kc.source_files  = 'Source/LLKeychain/'
     spec.static_framework = true
     spec.dependency 'KeychainSwift'
   end
