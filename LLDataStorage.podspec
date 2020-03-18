@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "LLDataStorage"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "LLDataStorage是一个Swift数据存储库"
 
   # This description is used to generate tags and improve search results.
