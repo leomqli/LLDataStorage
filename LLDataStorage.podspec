@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "LLDataStorage"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "LLDataStorage是一个Swift数据存储库"
 
   # This description is used to generate tags and improve search results.
@@ -94,8 +94,9 @@ Pod::Spec.new do |spec|
 
   spec.subspec 'LLDataBase' do |db|
     db.source_files  = 'Source/LLDataBase/'
-    spec.static_framework = true
-    spec.dependency 'WCDB.swift'
+    db.static_framework = true
+    db.dependency 'WCDB.swift'
+    db.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }  
   end
 
   spec.subspec 'LLFileManager' do |fm|
@@ -104,11 +105,8 @@ Pod::Spec.new do |spec|
 
   spec.subspec 'LLKeychain' do |kc|
     kc.source_files  = 'Source/LLKeychain/'
-    spec.static_framework = true
-    spec.dependency 'KeychainSwift'
+    kc.dependency 'KeychainSwift'
   end
-
-  spec.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
 
   # spec.public_header_files = "Classes/**/*.h"
 
