@@ -94,7 +94,6 @@ Pod::Spec.new do |spec|
 
   spec.subspec 'LLDataBase' do |db|
     db.source_files  = 'Source/LLDataBase/'
-    db.static_framework = true
     db.dependency 'WCDB.swift'
     db.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }  
   end
@@ -131,8 +130,9 @@ Pod::Spec.new do |spec|
   #  the lib prefix of their name.
   #
 
+  spec.static_framework = true
   spec.ios.frameworks = "UIKit", "Foundation"
-
+  
   # spec.framework  = "SomeFramework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
 
